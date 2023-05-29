@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { ValueCard } from './ValueCard'
-import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill} from 'react-icons/bs'
+import { BsArrowLeftCircle, BsArrowRightCircle} from 'react-icons/bs'
 import { RxDot, RxDotFilled } from 'react-icons/rx'
 
 
@@ -17,7 +17,7 @@ const values = [
         text: 'We strive to be at the forefront of innovation, continuously pushing boundaries to create futuristic homes that embrace cutting-edge technology, sustainable practices, and visionary design.'
     },
     {
-        img: '/new-value-1.jpg',
+        img: '/new-value-2.jpg',
         title: 'Integrity',
         text: 'We conduct business with the utmost integrity, treating our clients, partners, and employees with honesty, transparency, and respect. We are committed to building long-term relationships based on trust.'
 
@@ -61,14 +61,14 @@ const Values = () => {
 
     
   return (
-    <div className='flex flex-col items-center py-16 text-white m-12 px-4 bg-stone-950 rounded-sm'>
-        <div className='text-center space-y-3'>
-            <h1 className='font-montserrat font-semibold text-[2.25rem] tracking-wide'>Core Values Of Our Team</h1>
-            <p className='font-montserrat font-medium text-[1.35rem] text-slate-300 tracking-wider'>Pioneering Innovation, Exemplary Excellence, and Sustainable Stewardship</p>
+    <div className='flex flex-col items-center py-24 text-white px-16 mt-36 mb-20 bg-stone-950'>
+        <div className='text-center space-y-4'>
+            <h1 className='font-montserrat font-semibold text-[2.5rem]'>Core Values Of Our Team</h1>
+            <p className='font-montserrat font-medium text-[1.35rem] text-white tracking-wide'>Pioneering Innovation, Exemplary Excellence, and Sustainable Stewardship</p>
         </div>
         <div className='flex justify-center items-center h-[970px] mt-12'>
             <div className='pb-60'>
-                <BsFillArrowLeftCircleFill className='text-5xl text-white cursor-pointer' onClick={prevSlide} />
+                <BsArrowLeftCircle className='text-4xl text-white cursor-pointer' onClick={prevSlide} />
             </div>
            <div className='w-4/5'>
                 {values.map((value, index) => {
@@ -82,7 +82,7 @@ const Values = () => {
                 })}
             </div>
             <div className='pb-60'>
-                <BsFillArrowRightCircleFill className='text-5xl text-white cursor-pointer' onClick={nextSlide} />
+                <BsArrowRightCircle className='text-4xl text-white cursor-pointer' onClick={nextSlide} />
             </div>    
         </div>
         <div className='flex items-center justify-center'>

@@ -14,7 +14,7 @@ const Navbar = () => {
     const links = [
         { href: '/', label: 'Home' },
         { href: '/about', label: 'About' },
-        { href: '/properties', label: 'Poperties' },
+        { href: '/gallery', label: 'Gallery' },
         { href: '/services', label: 'Services' },
         { href: '/contact', label: 'Contact' },
     ]
@@ -34,14 +34,14 @@ const Navbar = () => {
 
 
   return (
-    <div style={{backgroundColor: `${background}` , boxShadow: `${boxShadow}`}} className='fixed w-full flex items-center justify-between p-3 ease-in transition duration-200 z-10'>
+    <div style={{backgroundColor: `${background}` , boxShadow: `${boxShadow}`}} className='fixed w-full flex items-center justify-between p-4 ease-in transition duration-200 z-10'>
         <div>
             <h1 className='font-montserrat font-bold text-[1.35rem]'>
                 <Link href='/'>Nexus</Link>
             </h1>
         </div>
         <nav>
-            <ul className='flex items-center space-x-12 font-montserrat font-medium text-lg text-stone-950 tracking-wide'>
+            <ul className='flex items-center space-x-12 font-montserrat font-semibold text-lg text-stone-950 tracking-wide'>
                 { links.map((link) => (
                     <li key={link.href}>
                         <Link href={link.href} className='relative'>

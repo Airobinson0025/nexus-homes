@@ -86,23 +86,23 @@ const Process = () => {
 
    
     return (
-    <div className='flex flex-col m-14 h-[900px]'>
+    <div className='flex flex-col m-20'>
 
-        <div className='space-y-6 my-16'>
-            <h2 className='text-5xl font-montserrat font-semibold text-neutral-900'>Our Streamline Process</h2>
-            <p className='font-montserrat text-[3.25rem] text-slate-400'>Turning your vision into reality</p>
+        <div className='space-y-4 my-16'>
+            <h2 className='text-[2.75rem] font-montserrat font-semibold text-neutral-900'>Our Streamline Process</h2>
+            <p className='font-montserrat text-[2.8rem] text-slate-500'>Turning your vision into reality</p>
         </div>    
 
 
         <nav>
-            <ul className='flex justify-evenly font-montserrat font-semibold text-neutral-400 shadow-lg shadow-slate-400/40 py-4 rounded-lg'>
+            <ul className='flex justify-evenly font-montserrat font-semibold text-neutral-400 shadow-lg shadow-slate-300 py-4 rounded-lg'>
                 {steps.map((step, index) => (
-                    <li key={index} className={index == current ? 'cursor-pointer hover:scale-110 text-stone-950 transition duration-200 tracking-wide' : 'cursor-pointer hover:scale-110 text-slate-400/80 transition duration-200 tracking-wide'} onClick={() => setCurrent(index)}>{step.name}</li>
+                    <li key={index} className={index == current ? 'cursor-pointer hover:scale-110 text-stone-950 transition duration-200 tracking-wider' : 'cursor-pointer hover:scale-110 text-slate-400/80 transition duration-200 tracking-wide'} onClick={() => setCurrent(index)}>{step.name}</li>
                 ))}
             </ul>
         </nav>
 
-        <div className='mt-12'>
+        <div>
             {steps.map((step, index) => (
                 <div key={index} className={index === current ? 'opacity-100 transition duration-1000 ease-in-out' : 'opacity-0 transition duration-1000 ease-in-out'}>
                     { index == current && (
