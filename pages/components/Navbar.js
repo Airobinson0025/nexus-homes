@@ -23,7 +23,7 @@ const Navbar = () => {
         const changeColor = () => {
             if (window.scrollY >= 50) {
                 setBackground('white')
-                setBoxShadow('0 2px 2px -2px rgba(0,0,0,.2)')
+                setBoxShadow('0px 1px 10px #999')
             } else {
                 setBackground('transparent')
                 setBoxShadow('none')
@@ -36,8 +36,8 @@ const Navbar = () => {
   return (
     <div style={{backgroundColor: `${background}` , boxShadow: `${boxShadow}`}} className='fixed w-full flex items-center justify-between p-4 ease-in transition duration-200 z-10'>
         <div>
-            <h1 className='font-montserrat font-bold text-[1.35rem]'>
-                <Link href='/'>Nexus</Link>
+            <h1 className='font-montserrat font-bold uppercase text-[1.35rem] tracking-wider'>
+                <Link href='/'>Nexus.</Link>
             </h1>
         </div>
         <nav>

@@ -11,3 +11,7 @@
 .hero-img {
   background-image: url('/nexus-hero.jpg');
 }
+
+.services-img {
+  background-image: url('/services-bg-img.jpg');
+}

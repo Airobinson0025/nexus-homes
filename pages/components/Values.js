@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { ValueCard } from './ValueCard'
-import { BsArrowLeftCircle, BsArrowRightCircle} from 'react-icons/bs'
+import { BsFillArrowLeftSquareFill, BsFillArrowRightSquareFill} from 'react-icons/bs'
 import { RxDot, RxDotFilled } from 'react-icons/rx'
 
 
@@ -8,23 +8,23 @@ const values = [
     
     {
         img: '/new-value.jpg',
-        title: 'Exellence',
+        title: 'EXELLENCE',
         text: 'We are committed to delivering excellence in every aspect of our work, from the meticulous craftsmanship of our homes to the exceptional customer service we provide. Quality is at the heart of everything we do.'
     },
     {
         img: '/value-5.jpg',
-        title: 'Innovation',
+        title: 'INNOVATION',
         text: 'We strive to be at the forefront of innovation, continuously pushing boundaries to create futuristic homes that embrace cutting-edge technology, sustainable practices, and visionary design.'
     },
     {
         img: '/new-value-2.jpg',
-        title: 'Integrity',
+        title: 'INTEGRITY',
         text: 'We conduct business with the utmost integrity, treating our clients, partners, and employees with honesty, transparency, and respect. We are committed to building long-term relationships based on trust.'
 
     },
     {
         img: '/value-4.jpg',
-        title: 'Sustainability',
+        title: 'SUSTAINABLITY',
         text: 'We are deeply committed to sustainable practices, prioritizing environmentally friendly solutions in our design, construction, and operation of homes. We aim to minimize our ecological footprint and contribute positively to the environment for future generations.'
     }
 ]
@@ -61,16 +61,15 @@ const Values = () => {
 
     
   return (
-    <div className='flex flex-col items-center py-24 text-white px-16 mt-36 mb-20 bg-stone-950'>
-        <div className='text-center space-y-4'>
-            <h1 className='font-montserrat font-semibold text-[2.5rem]'>Core Values Of Our Team</h1>
-            <p className='font-montserrat font-medium text-[1.35rem] text-white tracking-wide'>Pioneering Innovation, Exemplary Excellence, and Sustainable Stewardship</p>
+    <div className='flex flex-col items-center py-16 text-white bg-stone-950 my-24'>
+        <div className='text-center'>
+            <h1 className='font-montserrat font-semibold text-[2rem] tracking-wider uppercase'>what we&apos;re all about</h1>
         </div>
-        <div className='flex justify-center items-center h-[970px] mt-12'>
-            <div className='pb-60'>
-                <BsArrowLeftCircle className='text-4xl text-white cursor-pointer' onClick={prevSlide} />
+        <div className='flex justify-center items-center h-[970px]'>
+            <div className='pb-64 active:scale-90 transition duration-200'>
+                <BsFillArrowLeftSquareFill className='text-5xl text-white cursor-pointer' onClick={prevSlide} />
             </div>
-           <div className='w-4/5'>
+           <div className='w-4/5 mt-12'>
                 {values.map((value, index) => {
                     return (
                         <div key={index} className={index === current ? 'opacity-100 transition duration-1000 ease-in-out' : 'opacity-0 transition duration-1000 ease-in-out'}>
@@ -81,8 +80,8 @@ const Values = () => {
                     )
                 })}
             </div>
-            <div className='pb-60'>
-                <BsArrowRightCircle className='text-4xl text-white cursor-pointer' onClick={nextSlide} />
+            <div className='pb-64 active:scale-90 transition duration-200'>
+                <BsFillArrowRightSquareFill className='text-5xl text-white cursor-pointer' onClick={nextSlide} />
             </div>    
         </div>
         <div className='flex items-center justify-center'>
@@ -90,9 +89,9 @@ const Values = () => {
                 return (
                     <div key={index} className='mx-1'>
                         {index === current ? (
-                            <RxDotFilled className='text-3xl text-white cursor-pointer' onClick={() => goToSlide(index)} />
+                            <RxDotFilled className='text-[2.25rem] text-white cursor-pointer' onClick={() => goToSlide(index)} />
                         ) : (
-                            <RxDot className='text-3xl text-white cursor-pointer' onClick={() => goToSlide(index)} />
+                            <RxDot className='text-[2.25rem] text-white cursor-pointer' onClick={() => goToSlide(index)} />
                         )}
                     </div>
                 )

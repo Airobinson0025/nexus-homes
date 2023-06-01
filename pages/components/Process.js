@@ -89,15 +89,15 @@ const Process = () => {
     <div className='flex flex-col m-20'>
 
         <div className='space-y-4 my-16'>
-            <h2 className='text-[2.75rem] font-montserrat font-semibold text-neutral-900'>Our Streamline Process</h2>
-            <p className='font-montserrat text-[2.8rem] text-slate-500'>Turning your vision into reality</p>
+            <h2 className='text-[1.75rem] font-montserrat font-semibold text-neutral-900 tracking-wider'>OUR STREAMLINE PROCESS</h2>
+            <p className='font-montserrat text-[2.25rem] text-slate-500'>Turning your vision into reality</p>
         </div>    
 
 
         <nav>
-            <ul className='flex justify-evenly font-montserrat font-semibold text-neutral-400 shadow-lg shadow-slate-300 py-4 rounded-lg'>
+            <ul className='flex justify-evenly font-montserrat font-semibold text-neutral-400 shadow-lg shadow-slate-400 py-3 rounded-sm'>
                 {steps.map((step, index) => (
-                    <li key={index} className={index == current ? 'cursor-pointer hover:scale-110 text-stone-950 transition duration-200 tracking-wider' : 'cursor-pointer hover:scale-110 text-slate-400/80 transition duration-200 tracking-wide'} onClick={() => setCurrent(index)}>{step.name}</li>
+                    <li key={index} className={index == current ? 'cursor-pointer hover:scale-110 text-stone-950 transition duration-200 tracking-wide px-2' : 'cursor-pointer hover:scale-110 text-slate-400/80 transition duration-200 tracking-wide px-2'} onClick={() => setCurrent(index)}>{step.name}</li>
                 ))}
             </ul>
         </nav>
