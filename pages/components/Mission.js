@@ -17,7 +17,7 @@ const Mission = () => {
             </div>
             <div className='pt-6'>
                 <Link href='/about'>
-                    <button className='font-montserrat font-medium text-[1.rem] text-white py-2 px-6 bg-stone-950 border-2 border-transparent tracking-wide hover:bg-white hover:border-2 hover:border-stone-950 hover:text-stone-950 rounded-sm transition duration-300'>LEARN MORE</button>
+                    <button className='font-montserrat font-medium text-[1.1rem] text-white py-2 px-4 bg-stone-950 border-2 border-transparent tracking-wide hover:bg-white hover:border-2 hover:border-stone-950 hover:text-stone-950 rounded-sm transition duration-300'>Learn More</button>
                 </Link>
             </div>
             </div>

@@ -61,13 +61,13 @@ const Values = () => {
 
     
   return (
-    <div className='flex flex-col items-center py-16 text-white bg-stone-950 my-24'>
+    <div className='flex flex-col items-center py-16 text-white bg-stone-950 my-24 px-20'>
         <div className='text-center'>
-            <h1 className='font-montserrat font-semibold text-[2rem] tracking-wider uppercase'>what we&apos;re all about</h1>
+            <h1 className='font-montserrat font-semibold text-[1.75rem] tracking-wider uppercase'>what we&apos;re all about</h1>
         </div>
         <div className='flex justify-center items-center h-[970px]'>
             <div className='pb-64 active:scale-90 transition duration-200'>
-                <BsFillArrowLeftSquareFill className='text-5xl text-white cursor-pointer' onClick={prevSlide} />
+                <BsFillArrowLeftSquareFill className='text-4xl text-white cursor-pointer' onClick={prevSlide} />
             </div>
            <div className='w-4/5 mt-12'>
                 {values.map((value, index) => {
@@ -81,7 +81,7 @@ const Values = () => {
                 })}
             </div>
             <div className='pb-64 active:scale-90 transition duration-200'>
-                <BsFillArrowRightSquareFill className='text-5xl text-white cursor-pointer' onClick={nextSlide} />
+                <BsFillArrowRightSquareFill className='text-4xl text-white cursor-pointer' onClick={nextSlide} />
             </div>    
         </div>
         <div className='flex items-center justify-center'>

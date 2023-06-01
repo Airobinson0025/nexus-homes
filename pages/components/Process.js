@@ -88,7 +88,7 @@ const Process = () => {
     return (
     <div className='flex flex-col m-20'>
 
-        <div className='space-y-4 my-16'>
+        <div className=' my-16'>
             <h2 className='text-[1.75rem] font-montserrat font-semibold text-neutral-900 tracking-wider'>OUR STREAMLINE PROCESS</h2>
             <p className='font-montserrat text-[2.25rem] text-slate-500'>Turning your vision into reality</p>
         </div>    
