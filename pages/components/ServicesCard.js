@@ -1,13 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
 
-const ServicesCard = ({img, title, description}) => {
+const ServicesCard = ({id, img, title, description}) => {
   return (
-    <div className='flex flex-col space-y-4 font-montserrat max-w-[400px] h-[575px] mx-4 '>
+    <div className='flex flex-col items-center space-y-12 font-montserrat mt-16 px-9 rounded-xl w-[400px] h-[850px]'>
       <div>
-        <Image src={img} width={400} height={400} alt='image' className='rounded-sm' />
+        <Image src={img} width={350} height={350} alt='image' className='rounded-sm' />
       </div>
-      <div className='p-2 space-y-4 pt-8'>
+      <div className='flex flex-col space-y-4 '>
+        <h1 className='font-semibold text-[2.25rem] text-[#3C4741]'>{id}.</h1>
         <h1 className='text-[1.25rem] font-semibold uppercase tracking-wider'>{title}</h1>
         <p className='text-[1rem] leading-7 tracking-wider'>{description}</p>
        </div> 

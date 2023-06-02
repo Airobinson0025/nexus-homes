@@ -7,36 +7,37 @@ import ServicesCard from './ServicesCard'
 const services = [
     {
         id:'1',
-        img:'/service-img-13.jpg',
-        title: 'Custom Home Design:',
+        img:'/services-img-9.jpg',
+        title: 'Custom Home Design and Construction:',
         description: 'Transform your vision into a stunning reality with personalized design, expert craftsmanship, and meticulous attention to detail.'
     },
     {
         id:'2',
-        img: '/services-img-12.jpg',
+        img: '/services-img-7.jpg',
         title: 'Luxury Home Developments:',
         description:'Immerse yourself in meticulously crafted luxury communities, where exquisite design, exceptional amenities, and an elevated lifestyle converge.'
     },
     
     {
-        id:'4',
-        img: '/services-img-11.jpg',
+        id:'3',
+        img: '/services-img-10.jpg',
         title: 'Interior Design and Styling:',
-        description: 'Elevate your living space with our expert interior design and styling services, where we combine aesthetics, functionality, and attention to detail to create captivating and personalized interiors that reflect your unique taste and lifestyle.'
+        description: 'Elevate your living space with our expert interior design and styling services, where we combine aesthetics, functionality, and attention to detail.'
     }
 ]
 const Services = () => {
   return (
-    <div className='bg-stone-950 text-white py-10'>
-        <div className='flex flex-col font-montserrat text-right mx-20'>
-            <h1 className='font-semibold text-[1.75rem] tracking-wider uppercase'>Our Services</h1>
-            <p className='text-[2.25rem] text-slate-300 tracking-wider'>Crafted To Perfection</p>
+    <div className='text-stone-950 py-10 mx-20'>
+        <div className='text-center mb-10 space-y-2'>
+            <h1 className='font-montserrat font-semibold text-[2.15rem] uppercase tracking-wider'>What we can do for you</h1>
+            <p className='font-montserrat text-[1.5rem] text-slate-500 tracking-wide'>Our comprehensive range of services</p>
         </div>
 
-        <div className='flex justify-evenly mt-24 mx-4'>
+        <div className='flex justify-evenly'>
             {services.map((service) => (
                 <div key={service.id}>
                     <ServicesCard
+                        id={service.id}
                         img={service.img}
                         title={service.title}
                         description={service.description}
@@ -45,8 +46,8 @@ const Services = () => {
             ))}
         </div>
 
-        <div className='text-center mt-20'>
-            <Link href='/services' className='font-montserrat text-semibold text-[1.1rem] py-2 px-4 border-2 border-white hover:bg-white hover:text-stone-950 transition duration-200 rounded-sm tracking-wide'>Learn More</Link>
+        <div className='text-center mt-24'>
+            <Link href='/services' className='font-montserrat font-medium text-[1.1rem] py-3 px-6 bg-[#3C4741] text-white hover:bg-white hover:text-[#3C4741] hover:border-2 hover:border-[#3C4741] transition duration-200 rounded-sm tracking-wide'>Learn More</Link>
         </div>
     </div>
   )
