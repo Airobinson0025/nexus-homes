@@ -88,14 +88,14 @@ const Process = () => {
     return (
     <div className='flex flex-col m-20 h-[850px]'>
 
-        <div className=' my-16 space-y-2'>
+        <div className='my-16 space-y-2'>
             <h2 className='text-[1.75rem] font-montserrat font-semibold text-neutral-900 tracking-wider'>OUR STREAMLINE PROCESS</h2>
             <p className='font-montserrat text-[2.25rem] text-slate-500'>Turning your vision into reality</p>
         </div>    
 
 
         <nav>
-            <ul className='flex justify-evenly font-montserrat font-semibold text-neutral-400 shadow-lg shadow-slate-400 py-3 rounded-sm'>
+            <ul className='flex justify-evenly font-montserrat font-semibold text-neutral-400 shadow-lg shadow-slate-400 py-3 rounded-md'>
                 {steps.map((step, index) => (
                     <li key={index} className={index == current ? 'cursor-pointer hover:scale-110 text-stone-950 transition duration-200 tracking-wide px-2' : 'cursor-pointer hover:scale-110 text-slate-400/80 transition duration-200 tracking-wide px-2'} onClick={() => setCurrent(index)}>{step.name}</li>
                 ))}

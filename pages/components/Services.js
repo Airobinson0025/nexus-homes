@@ -27,10 +27,10 @@ const services = [
 ]
 const Services = () => {
   return (
-    <div className='text-stone-950 py-10 mx-20'>
+    <div className='text-white bg-stone-950 py-16 px-20'>
         <div className='text-center mb-10 space-y-2'>
             <h1 className='font-montserrat font-semibold text-[2.15rem] uppercase tracking-wider'>What we can do for you</h1>
-            <p className='font-montserrat text-[1.5rem] text-slate-500 tracking-wide'>Our comprehensive range of services</p>
+            <p className='font-montserrat text-[1.5rem] text-white tracking-wide'>Our comprehensive range of services</p>
         </div>
 
         <div className='flex justify-evenly'>
@@ -47,7 +47,7 @@ const Services = () => {
         </div>
 
         <div className='text-center mt-24'>
-            <Link href='/services' className='font-montserrat font-medium text-[1.1rem] py-3 px-6 bg-[#3C4741] text-white hover:bg-white hover:text-[#3C4741] hover:border-2 hover:border-[#3C4741] transition duration-200 rounded-sm tracking-wide'>Learn More</Link>
+            <Link href='/services' className='font-montserrat font-medium text-[1.1rem] py-3 px-6 bg-stone-950 border-2 border-white hover:text-stone-950 hover:border-2 hover:border-white hover:bg-white transition duration-200 rounded-sm tracking-wide'>Learn More</Link>
         </div>
     </div>
   )

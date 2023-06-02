@@ -4,6 +4,7 @@ import Mission from './components/Mission'
 import Process from './components/Process'
 import Values from './components/Values'
 import Services from './components/Services'
+import Stats from './components/Stats'
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <main>
         <Hero />
         <Mission />
+        <Stats />
         <Values />
         <Process />
         <Services />
