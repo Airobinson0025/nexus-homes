@@ -24,7 +24,7 @@ const stats = [
 
 const Stats = () => {
   return (
-    <div className='flex justify-evenly items-center mb-10 bg-stone-950 h-[320px]'>
+    <div className='flex justify-evenly items-center mb-10 bg-[#516063] h-[300px]'>
         {stats.map((stat) => (
             <div key={stat.id}>
                 <StatCard

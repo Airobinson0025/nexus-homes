@@ -28,9 +28,9 @@ const services = [
 const Services = () => {
   return (
     <div className='text-stone-950 py-16'>
-        <div className='text-center mb-10 space-y-2'>
+        <div className='text-center mb-6 space-y-2'>
             <h1 className='font-montserrat font-semibold text-[2.15rem] uppercase tracking-wider'>What we can do for you</h1>
-            <p className='font-montserrat text-[1.5rem] tracking-wide'>Our comprehensive range of services</p>
+            <p className='font-montserrat text-[1.45rem] tracking-wide'>Our comprehensive range of services</p>
         </div>
 
         <div className='flex justify-center'>
@@ -44,10 +44,6 @@ const Services = () => {
                     />
                 </div>
             ))}
-        </div>
-
-        <div className='text-center mt-20'>
-            <Link href='/services' className='font-montserrat font-medium text-[1.1rem] py-3 px-6 border-2 border-stone-950 hover:text-white hover:border-2 hover:bg-stone-950 transition duration-200 rounded-sm tracking-wide'>Learn More</Link>
         </div>
     </div>
   )
