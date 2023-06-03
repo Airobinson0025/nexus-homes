@@ -61,7 +61,7 @@ const Values = () => {
 
     
   return (
-    <div className='flex flex-col items-center py-16 text-white bg-[#3C4741] my-24 px-20'>
+    <div className='flex flex-col items-center py-16 text-white bg-[#3C4741] mb-24 px-20'>
         <div className='text-center'>
             <h1 className='font-montserrat font-semibold text-[1.75rem] tracking-wider uppercase'>what we&apos;re all about</h1>
         </div>

@@ -19,9 +19,9 @@ export default function Home() {
       <main>
         <Hero />
         <Mission />
-        <Stats />
         <Values />
         <Process />
+        <Stats />
         <Services />
       </main>
     </>
