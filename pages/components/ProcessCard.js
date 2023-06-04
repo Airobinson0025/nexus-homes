@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProcessCard = ({name, title, description, video}) => {
   return (
-    <div className='flex justify-evenly h-[600px] text-stone-950 '>
+    <div className='flex justify-evenly h-[600px] text-[#414b58] '>
         <div className='flex flex-col w-2/4 font-montserrat space-y-4 pt-32 pl-4'>
             <h1 className='font-bold text-[2.35rem] tracking-wider uppercase'>{name}</h1>
             <h2 className='font-semibold text-[1.5rem]'>{title}:</h2>

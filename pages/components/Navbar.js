@@ -20,7 +20,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const changeColor = () => {
-            if (window.scrollY >= 50) {
+            if (window.scrollY >= 100) {
                 setBackground('white')
                 setBoxShadow('0px 1px 10px #999')
             } else {
@@ -35,12 +35,12 @@ const Navbar = () => {
   return (
     <div style={{backgroundColor: `${background}` , boxShadow: `${boxShadow}`}} className='fixed w-full flex items-center justify-between p-4 ease-in transition duration-200 z-10'>
         <div>
-            <h1 className='font-montserrat font-bold uppercase text-[1.35rem] tracking-wider'>
+            <h1 className='font-montserrat font-bold text-[#414b58] uppercase text-[1.35rem] tracking-wider'>
                 <Link href='/'>Nexus.</Link>
             </h1>
         </div>
         <nav>
-            <ul className='flex items-center space-x-12 font-montserrat font-semibold text-lg text-stone-950 tracking-wide'>
+            <ul className='flex items-center space-x-12 font-montserrat font-semibold text-lg text-[#414b58] tracking-wide'>
                 { links.map((link) => (
                     <li key={link.href}>
                         <Link href={link.href} className='relative'>

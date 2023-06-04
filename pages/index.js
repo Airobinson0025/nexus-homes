@@ -5,6 +5,7 @@ import Process from './components/Process'
 import Values from './components/Values'
 import Services from './components/Services'
 import Stats from './components/Stats'
+import Location from './components/Location'
 
 
 export default function Home() {
@@ -19,10 +20,10 @@ export default function Home() {
       <main>
         <Hero />
         <Mission />
-        <Values />
         <Process />
-        <Stats />
         <Services />
+        <Values />
+        <Location />
       </main>
     </>
   )

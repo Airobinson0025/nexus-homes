@@ -3,14 +3,13 @@ import Image from 'next/image'
 
 const ServicesCard = ({id, img, title, description}) => {
   return (
-    <div className='flex flex-col items-center space-y-12 font-montserrat mt-16 px-4 rounded-xl w-[400px]'>
+    <div className='flex flex-col items-center font-montserrat w-[520px]'>
       <div>
-        <Image src={img} width={400} height={300} alt='image' className='rounded-sm' />
+        <Image src={img} width={520} height={520} alt='image' className='rounded-sm' />
       </div>
-      <div className='flex flex-col space-y-4 text-center px-4'>
-        <h1 className='font-semibold text-[2rem]'>{id}.</h1>
-        <h1 className='text-[1.25rem] font-semibold uppercase tracking-wider'>{title}</h1>
-        <p className='text-[1rem] leading-7 tracking-wider'>{description}</p>
+      <div className='flex flex-col text-center space-y-6 mt-16 w-[400px]'>
+        <h1 className='text-[1.35rem] font-semibold tracking-wide'>{title}</h1>
+        <p className='text-[1.1rem] leading-8 tracking-wider'>{description}</p>
        </div>
     </div>
   )

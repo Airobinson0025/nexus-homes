@@ -14,26 +14,18 @@ const services = [
     {
         id:'2',
         img: '/services-img-12.jpg',
-        title: 'Luxury Home Developments:',
-        description:'Immerse yourself in meticulously crafted luxury communities, where exquisite design, exceptional amenities, and an elevated lifestyle converge.'
-    },
-    
-    {
-        id:'3',
-        img: '/new-value.jpg',
-        title: 'Interior Design and Styling:',
+        title: 'Custom Interior Design and Styling:',
         description: 'Elevate your living space with our expert interior design and styling services, where we combine aesthetics, functionality, and attention to detail.'
     }
 ]
 const Services = () => {
   return (
-    <div className='text-stone-950 py-16'>
-        <div className='text-center mb-6 space-y-2'>
-            <h1 className='font-montserrat font-semibold text-[2.15rem] uppercase tracking-wider'>What we can do for you</h1>
-            <p className='font-montserrat text-[1.45rem] tracking-wide'>Our comprehensive range of services</p>
+    <div className='text-[#414b58] my-36 mx-20'>
+        <div className='text-right mb-6'>
+            <h1 className='font-montserrat font-bold text-[2rem] uppercase'>Services we offer</h1>
         </div>
 
-        <div className='flex justify-center'>
+        <div className='flex justify-between mt-16'>
             {services.map((service) => (
                 <div key={service.id}>
                     <ServicesCard
