@@ -6,7 +6,7 @@ const Mission = () => {
   return (
     <div className='flex flex-row-reverse justify-evenly items-center my-20'>
         <div className='flex flex-col'>
-            <Image src='/mission-hero-3.jpg' alt='Mission' width={475} height={475} className='rounded-sm'/>
+            <Image src='/mission-hero-3.jpg' alt='Mission' width={475} height={475} className='rounded-sm w-auto h-auto'/>
         </div>
         <div className='flex flex-col items-center'>
             <div className='py-2'>
